@@ -1,0 +1,11 @@
+int apple;
+int main()
+{
+    int plum;
+    plum = 3;
+    {
+        int pear = 5;
+        apple = pear + 2;
+    }
+    apple=apple+plum+1;
+}

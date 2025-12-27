@@ -1,0 +1,11 @@
+int apple;
+int func()
+{
+    return apple+7;
+}
+int main()
+{
+    apple = 1;
+    apple += func() + apple;
+    apple += 1;
+}

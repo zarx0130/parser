@@ -1,0 +1,9 @@
+int pear;
+int main()
+{
+    pear=1;
+    while(pear<8)
+    {
+        pear=pear+3;
+    }
+}

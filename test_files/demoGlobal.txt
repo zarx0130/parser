@@ -1,0 +1,8 @@
+int apple;
+int pear;
+int main()
+{
+    apple = 7;
+    pear = apple + apple;
+    apple = pear * 3;
+}

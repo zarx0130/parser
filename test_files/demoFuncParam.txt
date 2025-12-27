@@ -1,0 +1,10 @@
+int apple;
+int funcc(int aa, int bb)
+{
+    apple = aa + bb;
+}
+int main()
+{
+    int xray = 1;
+    funcc(9-2,xray)
+}

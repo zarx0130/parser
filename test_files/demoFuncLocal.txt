@@ -1,0 +1,21 @@
+int apple;
+int func2()
+{
+    int pear=1;
+    apple=apple*2;
+    apple -= pear;
+}
+int func1()
+{
+    int pear = 5;
+    apple = apple + 3;
+    apple += pear;
+    func2();
+    apple += pear;
+}
+int main()
+{
+    apple=1;
+    func1();
+    func1();
+}

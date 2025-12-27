@@ -1,0 +1,3 @@
+int func(int x, char c, const p) {
+    int apple = 5;
+}

@@ -1,0 +1,16 @@
+int apple = 0;
+
+int func2(int aa)
+{
+    return aa;
+}
+int func()
+{
+    apple += func2(4);
+    return apple;
+}
+int main()
+{
+    apple = 1;
+    apple=func2(5)+func();
+}

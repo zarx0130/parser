@@ -1,0 +1,16 @@
+int apple=1;
+int main()
+{
+    if(15*2<=30)
+    {
+        apple=4;
+    }
+    else
+    {
+        apple = 7;
+    }
+    if (apple == 4)
+    {
+        apple = 3;
+    }
+}
