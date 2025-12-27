@@ -14,23 +14,40 @@ Error Handling: syntax errors
 
 # Language Grammar Rules
 program → statement*
+
 statement → declaration | assignment | if | while | for | return | block | ";"
+
 declaration → type identifier ("=" expression)? ";"
            | type identifier "(" parameters? ")" block
+           
 assignment → identifier ("=" | "+=" | "-=" | "*=" | "/=" | "%=") expression ";"
+
 expression → logicalOr
+
 logicalOr → logicalAnd ("||" logicalAnd)*
+
 logicalAnd → equality ("&&" equality)*
+
 equality → comparison (("==" | "!=") comparison)*
+
 comparison → additive (("<" | ">" | "<=" | ">=") additive)*
+
 additive → multiplicative (("+" | "-") multiplicative)*
+
 multiplicative → unary (("*" | "/" | "%") unary)*
+
 unary → ("!" | "-" | "++" | "--")? primary
+
 primary → number | identifier | "(" expression ")" | functionCall
+
 block → "{" statement* "}"
+
 if → "if" "(" expression ")" statement ("else" statement)?
+
 while → "while" "(" expression ")" statement
+
 for → "for" "(" (declaration | expression? ";") expression? ";" expression? ")" statement
+
 return → "return" expression? ";"
 
 # Structure
